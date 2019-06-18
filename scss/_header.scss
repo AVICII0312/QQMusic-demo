@@ -1,0 +1,34 @@
+#header {
+  width: $header-width;
+  height: $header-height;
+  background: $header-background;
+  position: $header-position;
+  
+
+  h1 {
+    display: none;
+  }
+  #top_bd {
+    height: $top_bd-height;
+    display: $top_bd-display;
+    justify-content:$top_bd-justify-content;
+    align-items: $top_bd-align-items;
+    padding: $top_bd-padding; 
+    box-shadow: $top_bd-box-shadow;
+    #logo {
+      height: $top_logo-height;
+      display: $top_logo-display;
+    }
+    #top_button {
+        min-width: $top_button-min-width;
+        height: $top_button-height;
+        line-height: $top_button-line-height;
+        color: $top_button-color;
+        border: $top_button-border;
+        border-radius:$top_button-border-radius;
+        text-align: $top_button-text-align;
+        padding: $top_button-padding;
+        font-size: $top_button-font-size;        
+    }
+  }
+}

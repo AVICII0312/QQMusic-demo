@@ -1,0 +1,31 @@
+nav {
+  display: $nav-display;
+  background: $nav-background;
+  justify-content: $nav-justify-content;
+  padding-top: $nav-padding-top;
+  a {
+    flex: $nav_a-flex;
+    height: $nav_a-height;
+    display: $nav_a-display;
+    line-height: $nav_a-line-height;
+    text-align: $nav_a-text-align;
+    font-size: $nav_a-font-size;
+    color: $nav_a-color;
+    position: $nav_a-position;
+    &.current {
+        color: $nav_a_current-color;
+        &::after {
+            content: $nav_a_after-content;
+            width: 100%;
+            display: $nav_a_after-display;
+            position: $nav_a_after-position;
+            bottom: $nav_a_after-bottom;
+            left: $nav_a_after-left;
+            height: $nav_a_after-height;
+            background: $nav_a_after-background;
+          }
+      }
+  }
+  
+ 
+}
