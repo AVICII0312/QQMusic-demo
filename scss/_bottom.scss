@@ -1,0 +1,24 @@
+.bottombar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255,255,255,.9);
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    a{
+        display: block;
+        padding: 0 15px;
+        height: 33px;
+        line-height: 33px;
+        font-size: 14px;
+        color: #fff;
+        background: #30c27c;
+        border-radius:99px;
+    }
+
+
+}

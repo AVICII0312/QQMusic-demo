@@ -12,6 +12,7 @@ nav {
     font-size: $nav_a-font-size;
     color: $nav_a-color;
     position: $nav_a-position;
+    cursor: pointer;
     &.current {
         color: $nav_a_current-color;
         &::after {

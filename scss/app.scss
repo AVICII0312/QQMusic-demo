@@ -2,6 +2,6 @@
 @import "rec";
 @import "header";
 @import "nav";
-footer{
-    font-size: 5em;
-}
+@import "viewpager";
+@import 'main';
+@import 'bottom';

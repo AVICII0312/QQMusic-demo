@@ -1,0 +1,281 @@
+{
+    "code": 0,
+    "subcode": 0,
+    "message": "",
+    "default": 0,
+    "data": {
+        "topList": [{
+            "id": 4,
+            "listenCount": 19600000,
+            "picUrl": "https://y.gtimg.cn/music/photo_new/T003R300x300M000003XaG4p1tMOAQ.jpg",
+            "songList": [{
+                "singername": "Taylor Swift",
+                "songname": "You Need To Calm Down"
+            }, {
+                "singername": "隔壁老樊",
+                "songname": "多想在平庸的生活拥抱你 (Live)"
+            }, {
+                "singername": "Red Velvet (레드벨벳)",
+                "songname": "짐살라빔 (Zimzalabim)"
+            }],
+            "topTitle": "巅峰榜·流行指数",
+            "type": 0
+        }, {
+            "id": 26,
+            "listenCount": 19500000,
+            "picUrl": "https://y.gtimg.cn/music/photo_new/T003R300x300M000002C8D6Y41UbNf.jpg",
+            "songList": [{
+                "singername": "G.E.M. 邓紫棋",
+                "songname": "来自天堂的魔鬼"
+            }, {
+                "singername": "陈雪凝",
+                "songname": "你的酒馆对我打了烊"
+            }, {
+                "singername": "Taylor Swift",
+                "songname": "You Need To Calm Down"
+            }],
+            "topTitle": "巅峰榜·热歌",
+            "type": 0
+        }, {
+            "id": 27,
+            "listenCount": 2448400,
+            "picUrl": "https://y.gtimg.cn/music/photo_new/T003R300x300M000002DQE7e0QmoJd.jpg",
+            "songList": [{
+                "singername": "汪苏泷",
+                "songname": "耿"
+            }, {
+                "singername": "Taylor Swift",
+                "songname": "You Need To Calm Down"
+            }, {
+                "singername": "Red Velvet (레드벨벳)",
+                "songname": "짐살라빔 (Zimzalabim)"
+            }],
+            "topTitle": "巅峰榜·新歌",
+            "type": 0
+        }, {
+            "id": 58,
+            "listenCount": 5635960,
+            "picUrl": "https://y.gtimg.cn/music/photo_new/T003R300x300M000003qdYEM0n7Nqe.jpg",
+            "songList": [{
+                "singername": "张艺兴",
+                "songname": "Honey (和你)"
+            }, {
+                "singername": "吴亦凡",
+                "songname": "大碗宽面"
+            }, {
+                "singername": "张艺兴",
+                "songname": "和你 (Honey)"
+            }],
+            "topTitle": "说唱榜",
+            "type": 0
+        }, {
+            "id": 57,
+            "listenCount": 2726720,
+            "picUrl": "https://y.gtimg.cn/music/photo_new/T003R300x300M000001DdFwh3CKvpN.jpg",
+            "songList": [{
+                "singername": "The Chainsmokers/Bebe Rexha",
+                "songname": "Call You Mine"
+            }, {
+                "singername": "Oliver Heldens/Devin/Nile Rodgers",
+                "songname": "Summer Lover feat. Devin & Nile Rogers (CID Remix)"
+            }, {
+                "singername": "Ed Sheeran/Justin Bieber",
+                "songname": "I Don't Care (Loud Luxury Remix)"
+            }],
+            "topTitle": "电音榜",
+            "type": 0
+        }, {
+            "id": 28,
+            "listenCount": 9900000,
+            "picUrl": "https://y.gtimg.cn/music/photo_new/T003R300x300M000003fcgrI3OdFy2.jpg",
+            "songList": [{
+                "singername": "小咪",
+                "songname": "我走后"
+            }, {
+                "singername": "半吨兄弟",
+                "songname": "爱情错觉"
+            }, {
+                "singername": "魏新雨",
+                "songname": "余情未了"
+            }],
+            "topTitle": "巅峰榜·网络歌曲",
+            "type": 0
+        }, {
+            "id": 5,
+            "listenCount": 7296480,
+            "picUrl": "https://y.gtimg.cn/music/photo_new/T003R300x300M000003oJbEW3XEPDC.jpg",
+            "songList": [{
+                "singername": "王源",
+                "songname": "滚烫的青春"
+            }, {
+                "singername": "汪苏泷",
+                "songname": "耿"
+            }, {
+                "singername": "摩登兄弟",
+                "songname": "孤独的人在哪里"
+            }],
+            "topTitle": "巅峰榜·内地",
+            "type": 0
+        }, {
+            "id": 3,
+            "listenCount": 9600000,
+            "picUrl": "https://y.gtimg.cn/music/photo_new/T003R300x300M000000yHglX2xakPB.jpg",
+            "songList": [{
+                "singername": "Taylor Swift",
+                "songname": "You Need To Calm Down"
+            }, {
+                "singername": "The Chainsmokers/Bebe Rexha",
+                "songname": "Call You Mine"
+            }, {
+                "singername": "Katy Perry",
+                "songname": "Never Really Over"
+            }],
+            "topTitle": "巅峰榜·欧美",
+            "type": 0
+        }, {
+            "id": 59,
+            "listenCount": 1930000,
+            "picUrl": "https://y.gtimg.cn/music/photo_new/T003R300x300M0000035tTYA0dbcMF.jpg",
+            "songList": [{
+                "singername": "李治廷",
+                "songname": "I Know You Know"
+            }, {
+                "singername": "李克勤/阿兰",
+                "songname": "最完美的分手"
+            }, {
+                "singername": "HANA",
+                "songname": "没有你开始"
+            }],
+            "topTitle": "香港地区榜",
+            "type": 0
+        }, {
+            "id": 16,
+            "listenCount": 4313360,
+            "picUrl": "https://y.gtimg.cn/music/photo_new/T003R300x300M000001s6BnS201lLY.jpg",
+            "songList": [{
+                "singername": "전소미 (全昭弥)",
+                "songname": "BIRTHDAY"
+            }, {
+                "singername": "Red Velvet (레드벨벳)",
+                "songname": "짐살라빔 (Zimzalabim)"
+            }, {
+                "singername": "LEE HI (李遐怡)/B.I (金韩彬)",
+                "songname": "NO ONE (Feat. B.I of iKON) (누구 없소)"
+            }],
+            "topTitle": "巅峰榜·韩国",
+            "type": 0
+        }, {
+            "id": 60,
+            "listenCount": 19300000,
+            "picUrl": "https://y.gtimg.cn/music/photo_new/T003R300x300M000001oNUKK3frPkf.jpg",
+            "songList": [{
+                "singername": "半吨兄弟",
+                "songname": "爱情错觉"
+            }, {
+                "singername": "小咪",
+                "songname": "我走后"
+            }, {
+                "singername": "Vexento",
+                "songname": "Trippy Love"
+            }],
+            "topTitle": "抖音排行榜",
+            "type": 0
+        }, {
+            "id": 29,
+            "listenCount": 1950000,
+            "picUrl": "https://y.gtimg.cn/music/photo_new/T003R300x300M000001xXilW2wti7y.jpg",
+            "songList": [{
+                "singername": "黄勇/任浩铭",
+                "songname": "你看到的我"
+            }, {
+                "singername": "鞠婧祎",
+                "songname": "青城山下白素贞"
+            }, {
+                "singername": "李俊毅",
+                "songname": "两人份美好"
+            }],
+            "topTitle": "巅峰榜·影视金曲",
+            "type": 0
+        }, {
+            "id": 17,
+            "listenCount": 1498300,
+            "picUrl": "https://y.gtimg.cn/music/photo_new/T003R300x300M000000I1KXX2XVaoF.jpg",
+            "songList": [{
+                "singername": "米津玄師 (よねづ けんし)",
+                "songname": "海の幽霊 (海之幽灵)"
+            }, {
+                "singername": "GENERATIONS from EXILE TRIBE (放浪新世代 from 放浪一族)/FANTASTICS from EXILE TRIBE (ファンタスティックス)",
+                "songname": "Supersonic"
+            }, {
+                "singername": "PKCZ(R)/CL (李彩琳)/Afrojack",
+                "songname": "CUT IT UP"
+            }],
+            "topTitle": "巅峰榜·日本",
+            "type": 0
+        }, {
+            "id": 201,
+            "listenCount": 1910000,
+            "picUrl": "https://y.gtimg.cn/music/photo_new/T003R300x300M000001ezIDk0EZ1St.jpg",
+            "songList": [{
+                "singername": "张艺兴",
+                "songname": "HONEY"
+            }, {
+                "singername": "Taylor Swift",
+                "songname": "You Need To Calm Down"
+            }, {
+                "singername": "鞠婧祎",
+                "songname": "孤独与诗"
+            }],
+            "topTitle": "巅峰榜·MV",
+            "type": 0
+        }, {
+            "id": 52,
+            "listenCount": 523696,
+            "picUrl": "https://y.gtimg.cn/music/photo_new/T003R300x300M000002VOncV0PGDDN.jpg",
+            "songList": [{
+                "singername": "晓月老板",
+                "songname": "青玉案·元夕"
+            }, {
+                "singername": "张羿凡",
+                "songname": "那一定与你有关"
+            }, {
+                "singername": "K邵庄",
+                "songname": "长大前"
+            }],
+            "topTitle": "巅峰榜·腾讯音乐人原创榜",
+            "type": 0
+        }, {
+            "id": 36,
+            "listenCount": 1960000,
+            "picUrl": "https://y.gtimg.cn/music/photo_new/T003R300x300M000001aQ7G14LUrTm.jpg",
+            "songList": [{
+                "singername": "朴爱源",
+                "songname": "来自天堂的魔鬼"
+            }, {
+                "singername": "麓七",
+                "songname": "你的酒馆对我打了烊"
+            }, {
+                "singername": "LBI利比",
+                "songname": "我的名字"
+            }],
+            "topTitle": "巅峰榜·K歌金曲",
+            "type": 0
+        }, {
+            "id": 61,
+            "listenCount": 740040,
+            "picUrl": "https://y.gtimg.cn/music/photo_new/T003R300x300M000000oPh2o0LUEiR.jpg",
+            "songList": [{
+                "singername": "范晓萱/徐熙媛/徐熙娣/柳翰雅",
+                "songname": "姐妹们的旅行"
+            }, {
+                "singername": "品冠/尤长靖",
+                "songname": "投己所好"
+            }, {
+                "singername": "Ella陈嘉桦",
+                "songname": "啰哩叭唆"
+            }],
+            "topTitle": "台湾地区榜",
+            "type": 0
+        }]
+    }
+}

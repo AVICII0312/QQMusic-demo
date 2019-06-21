@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/css/app.css">
-    <title>QQ音乐</title>
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="shortcut icon" href="//y.qq.com/favicon.ico?max_age=2592000">
+    <title>QQ音乐 - 千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！</title>
 </head>
 
 <body>
@@ -14,20 +15,54 @@
         <header id="header">
             <h1>QQ音乐</h1>
             <div class="top_bd" id="top_bd">
-                <img src="/images/logo_ch.svg" alt="QQ音乐" id="logo">
+                <img src="./images/logo_ch.svg" alt="QQ音乐" id="logo">
                 <a class="top_button" id="top_button" href="">下载APP</a>
             </div>
         </header>
         <nav id="nav">
-            <a href="#" class="current">推荐</a>
-            <a href="#">排行榜</a>
-            <a href="#">搜索</a>
+            <a href="#" class="current" data-role="tab" data-view=".recommend">推荐</a>
+            <a href="#" data-role="tab" data-view=".billbaord">排行榜</a>
+            <a href="#" data-role="tab" data-view=".search">搜索</a>
         </nav>
-        <div class="recommend"></div>
-        <div class="billbaord"></div>
-        <div class="search"></div>
-        <footer>1</footer>
+        <div>
+            <div class="recommend">
+                <div class="viewpager" id="viewpager"></div>
+                <div class="radios">
+                    <h2 class="title">电台</h2>
+                    <div class="list">
+                    </div>
+
+
+                </div>
+                <footer>
+                    <div class="version">
+                        <a href="https://y.qq.com/?ADTAG=myqq&amp;nomobile=1#type=index">查看电脑版网页</a>
+                    </div>
+                    <div class="footerlogo"></div>
+                    <p class="footerinfo">Copyright © 1998 - <span>2019</span> Tencent. All Rights Reserved.</p>
+                    <p class="footerinfo">联系电话：0755-86013388 QQ群：55209235</p>
+                </footer>
+            </div>
+            <div class=" billbaord hide">
+                <div class="top-item">
+                    
+                </div>
+            </div>
+            <div class="search hide">2222</div>
+
+        </div>
+        <section class="bottombar">
+            <a href="javascript:;">安装QQ音乐 发现更多精彩</a>
+        </section>
+
     </div>
+    <script src="https://cdn.bootcss.com/underscore.js/1.9.1/underscore-min.js"></script>    
+    <script src="./scripts/viewpager.js"></script>
+    <script src="./scripts/lazyload.js"></script>
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/tab.js"></script>
+    <script src="./scripts/top.js"></script>
+    
 </body>
 
 </html>

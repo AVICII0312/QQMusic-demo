@@ -36,7 +36,8 @@ body {
   width: 100%;
   height: 80px;
   background: #fff;
-  position: fixed; }
+  position: fixed;
+  z-index: 100; }
   #header h1 {
     display: none; }
   #header #top_bd {
@@ -73,7 +74,8 @@ nav {
     text-align: center;
     font-size: 16px;
     color: rgba(0, 0, 0, 0.6);
-    position: relative; }
+    position: relative;
+    cursor: pointer; }
     nav a.current {
       color: #31c27c; }
       nav a.current::after {
@@ -86,5 +88,183 @@ nav {
         height: 2px;
         background: #31c27c; }
 
-footer {
-  font-size: 5em; }
+.viewpager {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 14px; }
+  .viewpager .viewpager-wrap {
+    display: flex;
+    transition: .3s; }
+  .viewpager .viewpager-item {
+    flex-basis: 100%; }
+    .viewpager .viewpager-item > a {
+      display: block; }
+      .viewpager .viewpager-item > a img {
+        width: 100%;
+        display: block; }
+
+.hide {
+  display: none; }
+
+.recommend .radios {
+  margin: 0 10px;
+  margin-bottom: 15px; }
+  .recommend .radios .title {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 11px; }
+  .recommend .radios .list {
+    display: flex;
+    margin-right: -8px; }
+    .recommend .radios .list .list-item {
+      flex: 1;
+      padding-right: 8px; }
+      .recommend .radios .list .list-item a {
+        display: block;
+        background: #fff; }
+        .recommend .radios .list .list-item a .list-media {
+          margin-bottom: 5px;
+          position: relative; }
+          .recommend .radios .list .list-item a .list-media img {
+            width: 100%;
+            display: block; }
+          .recommend .radios .list .list-item a .list-media .icon-play {
+            background-image: url(../images/list_sprite.png);
+            background-repeat: no-repeat;
+            background-size: 24px 60px;
+            height: 24px;
+            width: 24px;
+            position: absolute;
+            bottom: 5px;
+            right: 5px; }
+        .recommend .radios .list .list-item a .list-info {
+          color: #000;
+          padding: 0 7px 5px; }
+          .recommend .radios .list .list-item a .list-info h3 {
+            font-size: 14px;
+            font-weight: 400;
+            height: 36px;
+            line-height: 18px;
+            white-space: normal;
+            word-wrap: break-word; }
+
+.recommend footer {
+  padding: 15px 0 70px; }
+  .recommend footer .version {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 16px; }
+    .recommend footer .version a {
+      position: relative;
+      display: inline-block;
+      padding: 0 15px;
+      font-size: 14px;
+      height: 14px;
+      line-height: 14px;
+      color: #000; }
+  .recommend footer .footerlogo {
+    display: block;
+    width: 82px;
+    height: 24px;
+    margin: 0 auto 10px;
+    background-image: url(../images/logo_footer.png);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .recommend footer .footerinfo {
+    font-size: 10px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6); }
+
+.billbaord {
+  margin: 10px;
+  padding-bottom: 55px; }
+  .billbaord .top-item .top-list {
+    margin-bottom: 10px;
+    background: #fff;
+    display: flex; }
+    .billbaord .top-item .top-list .top-media {
+      width: 100px;
+      height: 100px;
+      position: relative; }
+      .billbaord .top-item .top-list .top-media::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        z-index: 1;
+        background-image: url(../images/shadow_rp_b.png);
+        background-size: 1px 117px;
+        background-repeat: repeat-x; }
+      .billbaord .top-item .top-list .top-media img {
+        width: 100%; }
+      .billbaord .top-item .top-list .top-media span {
+        position: absolute;
+        left: 5px;
+        bottom: 7px;
+        color: #fff;
+        line-height: 12px;
+        opacity: 0.6;
+        font-size: 9px;
+        z-index: 10; }
+        .billbaord .top-item .top-list .top-media span i {
+          width: 10px;
+          height: 10px;
+          display: inline-block;
+          margin-right: 3px;
+          background-image: url(../images/list_sprite.png);
+          background-repeat: no-repeat;
+          background-size: 24px 60px;
+          background-position: 0 -50px;
+          z-index: 10; }
+    .billbaord .top-item .top-list .top-info {
+      width: 255px;
+      position: relative;
+      flex: 1;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      display: flex;
+      align-items: center; }
+      .billbaord .top-item .top-list .top-info .top-over {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+      .billbaord .top-item .top-list .top-info .top-cont {
+        flex: 1;
+        margin: 0 10px 0 15px; }
+        .billbaord .top-item .top-list .top-info .top-cont h3 {
+          font-size: 16px;
+          color: #000;
+          font-weight: 400;
+          margin-bottom: 5px; }
+        .billbaord .top-item .top-list .top-info .top-cont p {
+          font-size: 14px;
+          color: rgba(0, 0, 0, 0.5); }
+          .billbaord .top-item .top-list .top-info .top-cont p span {
+            color: #000;
+            margin-left: 8px;
+            margin-right: 5px; }
+
+.bottombar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100; }
+  .bottombar a {
+    display: block;
+    padding: 0 15px;
+    height: 33px;
+    line-height: 33px;
+    font-size: 14px;
+    color: #fff;
+    background: #30c27c;
+    border-radius: 99px; }

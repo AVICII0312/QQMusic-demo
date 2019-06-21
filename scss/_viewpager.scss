@@ -1,0 +1,19 @@
+.viewpager {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 14px;
+  .viewpager-wrap {
+    display: flex;
+    transition: .3s;
+  }
+  .viewpager-item {
+    flex-basis: 100%;
+    > a {
+      display: block;
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
