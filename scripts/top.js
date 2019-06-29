@@ -1,5 +1,5 @@
 ! function () {
-    fetch('./JSON/top.json')
+    fetch('https://qq-music-api.now.sh/top')
         .then(res => res.json())
         .then(render)
 

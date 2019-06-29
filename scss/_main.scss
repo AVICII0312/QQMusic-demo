@@ -173,3 +173,200 @@
     }
   }
 }
+.search {
+  padding-bottom: 70px;
+  .search-bar {
+    background: #f4f4f4;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    .bar-cont {
+      position: relative;
+      border-radius: 3px;
+      background: #fff;
+      padding: 8px 12px 8px 35px;
+      flex: 1;
+      .search-input {
+        height: 20px;
+        line-height: 20px;
+        width: 100%;
+        color: rgba(0, 0, 0, 0.3);
+        border: none;
+        font-size: 14px;
+        outline: none;
+      }
+      .icon-search {
+        position: absolute;
+        top: 9px;
+        left: 10px;
+        width: 18px;
+        height: 18px;
+        background-image: url(../images/search.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: transparent;
+      }
+    }
+    .bar-text {
+      padding-right: 10px;
+      padding-left: 10px;
+      font-size: 14px;
+      height: 36px;
+      line-height: 36px;
+    }
+  }
+  .search-record {
+    background: #fff;
+    li {
+      border-top: 1px solid #ededed;
+      padding: 0 15px;
+      &:last-child {
+        border-bottom: 1px solid #ededed;
+      }
+      a {
+        position: relative;
+        display: block;
+        height: 44px;
+        line-height: 44px;
+        .icon-clock {
+          position: absolute;
+          left: 0;
+          top: 12px;
+          width: 20px;
+          height: 20px;
+          background-image: url(../images/clock_ic.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .record-cont {
+          position: absolute;
+          left: 40px;
+          right: 50px;
+          display: block;
+          height: 44px;
+          line-height: 44px;
+          color: #000;
+          font-size: 14px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .icon-close {
+          position: absolute;
+          right: 0;
+          top: 12px;
+          width: 20px;
+          height: 20px;
+          &::before {
+            width: 17px;
+            height: 1px;
+            content: "";
+            position: absolute;
+            top: 8px;
+            left: 0;
+            background: rgba(0, 0, 0, 0.6);
+            transform: rotate(45deg);
+          }
+          &::after {
+            width: 1px;
+            height: 17px;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 8px;
+            background: rgba(0, 0, 0, 0.6);
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+    .record-handle {
+      text-align: center;
+      height: 44px;
+      line-height: 44px;
+      a {
+        display: inline-block;
+        line-height: 44px;
+        color: #47c88a;
+      }
+    }
+  }
+  .search-result {
+    background: #fff;
+    padding: 15px 15px 10px 15px;
+    h3 {
+      color: rgba(0, 0, 0, 0.6);
+      margin-bottom: 8px;
+    }
+    .result-tag {
+      a {
+        display: inline-block;
+        font-size: 14px;
+        padding: 0 10px;
+        height: 30px;
+        line-height: 30px;
+        color: #000;
+        border: 1px solid rgba(0, 0, 0, 0.6);
+        border-radius: 99px;
+        word-break: keep-all;
+        margin-bottom: 10px;
+        margin-right: 14px;
+      }
+    }
+  }
+  .search-content {
+    
+    .song-list {
+      background: #fff;
+      a {
+        display: block;
+        position: relative;
+        height: 55px;
+        padding-left: 56px;
+        overflow: hidden;
+        background: #fff;
+        i {
+          position: absolute;
+          top: 18px;
+          left: 18px;
+          width: 22px;
+          height: 20px;
+          background-position: 0 0;
+          background-image: url(../images/search_sprite.png);
+          background-repeat: no-repeat;
+          background-size: 22px 30px;
+        }
+        h6 {
+          margin: 10px 0 1px 2px;
+          line-height: 18px;
+          font-size: 16px;
+          font-weight: 400;
+          color: #000;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        p.singer-tit {
+          color: grey;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          height: 1px;
+          top: 0;
+          left: 0;
+          right: 0;
+          background: #e5e5e5;
+        }
+      }
+    }
+    p.load-complete{
+      line-height: 40px;
+      text-align: center;
+      color: grey;
+    }
+  }
+}

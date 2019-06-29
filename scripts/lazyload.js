@@ -4,7 +4,7 @@ function lazyload(images) {
         if (imgs.length === 0) {
             return window.removeEventListener('scroll', onscroll)
         }
-        console.log(2)
+       
         imgs = imgs.filter(img => img.classList.contains('lazyload'))
         imgs.forEach(img => {
             if (inViewport(img)) {
@@ -12,7 +12,7 @@ function lazyload(images) {
             }
         })
 
-    }, 300)
+    }, 500)
     window.addEventListener('scroll', onscroll)
     window.dispatchEvent(new Event('scroll'))
 

@@ -1,5 +1,5 @@
 ! function () {
-    fetch('./JSON/rec.json')
+    fetch('https://qq-music-api.now.sh')
         .then(res => res.json())
         .then(render)
 
@@ -38,4 +38,28 @@
         </div>`).join('')
     }
     window.viewpager = viewpager
+
+    document.querySelector('#top_button').addEventListener('click',()=>player.show())
+    document.querySelector('#icon-list').addEventListener('click',()=>player.hide())
+    let search = new Search(document.querySelector('#search-view'))
+    let player = new Player(document.querySelector('#player'))
+
+    onHashChange()
+    addEventListener('hashchange',onHashChange)
+
+    function onHashChange(){
+        let hash = location.hash
+        if(/^#player\?.+/.test(hash)){
+            console.log(123)
+            let matches = hash.slice(hash.indexOf('?') + 1).match(/(\w+)=([^&]+)/g)
+            let options = matches && matches.reduce((res, cur) => {
+                let arr = cur.split('=')
+                res[arr[0]] = decodeURIComponent(arr[1])
+                return res
+              }, {})
+            player.play(options)
+        } else{
+            player.hide()
+        }
+    }
 }.call()

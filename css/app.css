@@ -14,8 +14,9 @@ body::-webkit-scrollbar {
   display: none; }
 
 body {
-  background: #f4f4f4;
-  font: 12px/1.5 "hiragino sans gb", arial; }
+  background: #fff;
+  font: 12px/1.5 "hiragino sans gb", arial;
+  color: #555; }
   body a {
     border: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -37,7 +38,7 @@ body {
   height: 80px;
   background: #fff;
   position: fixed;
-  z-index: 100; }
+  z-index: 10; }
   #header h1 {
     display: none; }
   #header #top_bd {
@@ -63,7 +64,7 @@ body {
 
 nav {
   display: flex;
-  background: rgba(255, 255, 255, 0.6);
+  background: #fff;
   justify-content: space-around;
   padding-top: 80px; }
   nav a {
@@ -248,6 +249,172 @@ nav {
             margin-left: 8px;
             margin-right: 5px; }
 
+.search {
+  padding-bottom: 70px; }
+  .search .search-bar {
+    background: #f4f4f4;
+    padding: 10px;
+    display: flex;
+    align-items: center; }
+    .search .search-bar .bar-cont {
+      position: relative;
+      border-radius: 3px;
+      background: #fff;
+      padding: 8px 12px 8px 35px;
+      flex: 1; }
+      .search .search-bar .bar-cont .search-input {
+        height: 20px;
+        line-height: 20px;
+        width: 100%;
+        color: rgba(0, 0, 0, 0.3);
+        border: none;
+        font-size: 14px;
+        outline: none; }
+      .search .search-bar .bar-cont .icon-search {
+        position: absolute;
+        top: 9px;
+        left: 10px;
+        width: 18px;
+        height: 18px;
+        background-image: url(../images/search.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: transparent; }
+    .search .search-bar .bar-text {
+      padding-right: 10px;
+      padding-left: 10px;
+      font-size: 14px;
+      height: 36px;
+      line-height: 36px; }
+  .search .search-record {
+    background: #fff; }
+    .search .search-record li {
+      border-top: 1px solid #ededed;
+      padding: 0 15px; }
+      .search .search-record li:last-child {
+        border-bottom: 1px solid #ededed; }
+      .search .search-record li a {
+        position: relative;
+        display: block;
+        height: 44px;
+        line-height: 44px; }
+        .search .search-record li a .icon-clock {
+          position: absolute;
+          left: 0;
+          top: 12px;
+          width: 20px;
+          height: 20px;
+          background-image: url(../images/clock_ic.png);
+          background-repeat: no-repeat;
+          background-size: cover; }
+        .search .search-record li a .record-cont {
+          position: absolute;
+          left: 40px;
+          right: 50px;
+          display: block;
+          height: 44px;
+          line-height: 44px;
+          color: #000;
+          font-size: 14px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+        .search .search-record li a .icon-close {
+          position: absolute;
+          right: 0;
+          top: 12px;
+          width: 20px;
+          height: 20px; }
+          .search .search-record li a .icon-close::before {
+            width: 17px;
+            height: 1px;
+            content: "";
+            position: absolute;
+            top: 8px;
+            left: 0;
+            background: rgba(0, 0, 0, 0.6);
+            transform: rotate(45deg); }
+          .search .search-record li a .icon-close::after {
+            width: 1px;
+            height: 17px;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 8px;
+            background: rgba(0, 0, 0, 0.6);
+            transform: rotate(45deg); }
+    .search .search-record .record-handle {
+      text-align: center;
+      height: 44px;
+      line-height: 44px; }
+      .search .search-record .record-handle a {
+        display: inline-block;
+        line-height: 44px;
+        color: #47c88a; }
+  .search .search-result {
+    background: #fff;
+    padding: 15px 15px 10px 15px; }
+    .search .search-result h3 {
+      color: rgba(0, 0, 0, 0.6);
+      margin-bottom: 8px; }
+    .search .search-result .result-tag a {
+      display: inline-block;
+      font-size: 14px;
+      padding: 0 10px;
+      height: 30px;
+      line-height: 30px;
+      color: #000;
+      border: 1px solid rgba(0, 0, 0, 0.6);
+      border-radius: 99px;
+      word-break: keep-all;
+      margin-bottom: 10px;
+      margin-right: 14px; }
+  .search .search-content .song-list {
+    background: #fff; }
+    .search .search-content .song-list a {
+      display: block;
+      position: relative;
+      height: 55px;
+      padding-left: 56px;
+      overflow: hidden;
+      background: #fff; }
+      .search .search-content .song-list a i {
+        position: absolute;
+        top: 18px;
+        left: 18px;
+        width: 22px;
+        height: 20px;
+        background-position: 0 0;
+        background-image: url(../images/search_sprite.png);
+        background-repeat: no-repeat;
+        background-size: 22px 30px; }
+      .search .search-content .song-list a h6 {
+        margin: 10px 0 1px 2px;
+        line-height: 18px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #000;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+      .search .search-content .song-list a p.singer-tit {
+        color: grey;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+      .search .search-content .song-list a::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #e5e5e5; }
+  .search .search-content p.load-complete {
+    line-height: 40px;
+    text-align: center;
+    color: grey; }
+
 .bottombar {
   position: fixed;
   bottom: 0;
@@ -258,7 +425,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100; }
+  z-index: 10; }
   .bottombar a {
     display: block;
     padding: 0 15px;
@@ -268,3 +435,154 @@ nav {
     color: #fff;
     background: #30c27c;
     border-radius: 99px; }
+
+.player {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  position: fixed;
+  transition: 0.3s;
+  overflow: hidden;
+  transform: translateY(-100%);
+  opacity: 0; }
+  .player.show {
+    opacity: 1;
+    transform: translateY(0); }
+  .player .play-container {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9; }
+    .player .play-container .play-header {
+      display: flex;
+      padding: 15px;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.1); }
+      .player .play-container .play-header .song-cover {
+        width: 80px;
+        height: 80px;
+        display: block;
+        margin-right: 15px; }
+      .player .play-container .play-header .song-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .player .play-container .play-header .song-info .song-name {
+          height: 30px;
+          font-size: 18px;
+          font-weight: normal;
+          color: #fff;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis; }
+        .player .play-container .play-header .song-info .song-artist {
+          height: 21px;
+          font-size: 14px;
+          color: #fff;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis; }
+      .player .play-container .play-header .icon-action {
+        width: 44px;
+        height: 44px;
+        border: solid 1px #fff;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.1);
+        opacity: 0.6;
+        margin-right: 10px;
+        background-image: url(../images/sprite_play.png);
+        background-repeat: no-repeat;
+        background-size: 40px 380px; }
+        .player .play-container .play-header .icon-action.icon-play {
+          background-position: 15px -153px; }
+        .player .play-container .play-header .icon-action.icon-pause {
+          background-position: 17px -183px; }
+    .player .play-container .play-lyrics {
+      flex: 1;
+      overflow: hidden;
+      margin: 36px 0 60px 0;
+      color: rgba(255, 255, 255, 0.6);
+      max-height: calc(100% - 205px); }
+      .player .play-container .play-lyrics .lyrics-lines {
+        overflow: hidden;
+        transition: 0.5s; }
+    .player .play-container .play-footer {
+      position: relative; }
+      .player .play-container .play-footer .icon-list {
+        width: 40px;
+        height: 40px;
+        right: 13px;
+        top: -40px;
+        position: absolute;
+        background-image: url(../images/sprite_play.png);
+        background-repeat: no-repeat;
+        background-size: 40px 380px;
+        background-position: 8px -250px; }
+      .player .play-container .play-footer .progress {
+        display: flex;
+        align-items: center; }
+        .player .play-container .play-footer .progress .startTime {
+          top: 0;
+          z-index: 1;
+          width: 55px;
+          font-size: 12px;
+          color: #808080;
+          line-height: 40px;
+          text-align: center;
+          letter-spacing: 1px; }
+        .player .play-container .play-footer .progress .progressbar {
+          flex: 1;
+          overflow: hidden;
+          background-color: rgba(255, 255, 255, 0.2); }
+          .player .play-container .play-footer .progress .progressbar .progressbar-gress {
+            width: 0%;
+            height: 2px;
+            background: #31c27c; }
+        .player .play-container .play-footer .progress .endTime {
+          top: 0;
+          z-index: 1;
+          width: 55px;
+          font-size: 12px;
+          color: #808080;
+          line-height: 40px;
+          text-align: center;
+          letter-spacing: 1px; }
+      .player .play-container .play-footer .actions {
+        height: 65px;
+        margin-top: 10px;
+        padding-top: 5px; }
+        .player .play-container .play-footer .actions a {
+          position: relative;
+          display: block;
+          height: 45px;
+          line-height: 45px;
+          margin: 0 50px;
+          padding: 0 55px;
+          overflow: hidden;
+          white-space: nowrap;
+          font-size: 20px;
+          color: #fff;
+          border-radius: 999px;
+          background-color: #31c27c;
+          text-align: center;
+          background-image: url(../images/sprite_play.png);
+          background-repeat: no-repeat;
+          background-size: 43px 380px;
+          background-position: 6px -321px; }
+  .player .play-backgruond {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-image: url(../images/300.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    filter: blur(20px);
+    transform: scale(1.15); }
