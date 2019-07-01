@@ -1,4 +1,4 @@
-function lazyload(images) {
+export function lazyload(images) {
     let imgs = [].slice.call(images)
     let onscroll = throttle(function () {
         if (imgs.length === 0) {

@@ -1,4 +1,4 @@
-class Viewpager {
+export class Viewpager {
     constructor(options = {}){        
         this.$el=options.el
         this.viewpagers = options.viewpagers
@@ -34,5 +34,4 @@ class Viewpager {
         let aaa = `-${this.index*100/this.viewpagers.length}%`
         this.$wrap.style.transform = `translate(${aaa})`
     }
-
 }

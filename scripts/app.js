@@ -1,49 +1,17 @@
-! function () {
-    fetch('https://qq-music-api.now.sh')
-        .then(res => res.json())
-        .then(render)
-
-    function render(json) {
-        renderviewpager(json.data.slider)
-        renderRadio(json.data.radioList)
-        lazyload(document.querySelectorAll('.lazyload'))
-    }
-
-    function renderviewpager(slides) {
-        slides = slides.map(slide => {
-            return {
-                link: slide.linkUrl,
-                image: slide.picUrl
-            }
-        })
-        new Viewpager({
-            el: document.querySelector('#viewpager'),
-            viewpagers: slides
-        })
-    }
-
-    function renderRadio(radios) {
-        document.querySelector('.radios .list').innerHTML= radios.map(radio =>
-        `
-        <div class=" list-item">
-            <a href="">
-                <div class="list-media">
-                    <img class="lazyload" data-src="${radio.picUrl}">
-                    <span class="icon-play"></span>
-                </div>
-                <div class=" list-info">
-                    <h3>${radio.Ftitle}</h3>
-                </div>
-            </a>
-        </div>`).join('')
-    }
-    window.viewpager = viewpager
-
-    document.querySelector('#top_button').addEventListener('click',()=>player.show())
-    document.querySelector('#icon-list').addEventListener('click',()=>player.hide())
+    import {Recommend} from './recommend.js'
+    import { Toplist } from './toplist.js'
+    import { Search } from './search.js'
+    import { Player } from './play.js'
+    import './tab.js'
+    
+    let recommend = new Recommend(document.querySelector('#recommend')).launch()
+    let toplist = new Toplist(document.querySelector('#billbaord')).launch()
     let search = new Search(document.querySelector('#search-view'))
     let player = new Player(document.querySelector('#player'))
-
+    
+    document.querySelector('#top_button').addEventListener('click',()=>player.show())
+    document.querySelector('#icon-list').addEventListener('click',()=>player.hide())
+   
     onHashChange()
     addEventListener('hashchange',onHashChange)
 
@@ -57,9 +25,10 @@
                 res[arr[0]] = decodeURIComponent(arr[1])
                 return res
               }, {})
+           
+            window.options = options 
             player.play(options)
         } else{
             player.hide()
         }
     }
-}.call()

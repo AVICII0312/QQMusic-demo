@@ -1,3 +1,4 @@
+import {lazyload} from './lazyload.js'
 document.addEventListener('click', function (event) {
     let target = event.target
     

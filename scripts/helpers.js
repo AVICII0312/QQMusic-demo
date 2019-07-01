@@ -1,5 +1,4 @@
-
-import { LYRICS_URL, SEARCH_URL } from './constants'
+import { LYRICS_URL, SEARCH_URL } from './constants.js'
 
 export function songUrl(id) {
   return `http://ws.stream.qqmusic.qq.com/${id}.m4a?fromtag=46`
